@@ -26,10 +26,8 @@ namespace PCDevLocadora.Services
             Console.WriteLine("Digite o nome do gênero do filme:");
             string genero = Console.ReadLine();
 
-            Console.WriteLine("Digite o nome do diretor do filme:");
-            string diretor = Console.ReadLine();
-
-            Filme filme = new Filme(nome, genero, diretor);
+           
+            Filme filme = new Filme(nome, genero);
             _listaFilmes.Add(filme);
         }
     }

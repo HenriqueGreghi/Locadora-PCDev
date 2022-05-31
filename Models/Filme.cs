@@ -7,6 +7,12 @@ namespace PCDevLocadora.Models
 {
     public class Filme : Item
     {
+        public Filme(string nome, string genero)
+        {
+            Nome = nome;
+            Genero = genero;
+        }
+
         public Filme(string nome, string genero, string diretor)
         {
             Nome = nome;

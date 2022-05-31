@@ -26,8 +26,8 @@ namespace PCDevLocadora.Services
             Console.WriteLine("Digite o nome do gênero da série:");
             string genero = Console.ReadLine();
 
-            Console.WriteLine("Digite o nome do diretor da série:");
-            string diretor = Console.ReadLine();
+            Serie serie = new Serie(nome, genero);
+            _listaSeries.Add(serie);
 
         }
 
