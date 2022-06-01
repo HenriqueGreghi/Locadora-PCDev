@@ -7,6 +7,12 @@ namespace PCDevLocadora.Models
 {
     public class Serie : Item
     {
+        public Serie(string nome, string genero)
+        {
+            Nome = nome;
+            Genero = genero;
+        }
+
         public Serie(string nome, string genero, int codigo)
         {
             Nome = nome;

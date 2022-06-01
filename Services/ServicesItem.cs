@@ -10,8 +10,11 @@ namespace PCDevLocadora.Services
         public ServicesItem()
         {
             DataDaLocacao = DateTime.Now;
-            
+            Devolucao = DataDaLocacao.AddDays(3);
+
         }
 
+        public DateTime DataDaLocacao { get; }
+        public DateTime Devolucao { get; }
     }
 }

@@ -9,7 +9,7 @@ namespace PCDevLocadora.Services
     {
         public static List<Filme> _listaFilmes = new List<Filme>();
 
-       
+        
 
         public void ListarFilme()
         {
@@ -27,6 +27,9 @@ namespace PCDevLocadora.Services
 
             Console.WriteLine("Digite o nome do gênero do filme:");
             string genero = Console.ReadLine();
+            
+            Console.WriteLine("Digite o código do filme:");
+            int codigo = int.Parse(Console.ReadLine());
 
 
             Filme filme = new Filme(nome, genero, codigo) ;
